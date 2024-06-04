@@ -1,0 +1,77 @@
+/* Ensure the body takes the full height of the viewport */
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+/* Use Flexbox to center the container */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Style the container to have padding and shadow */
+.container {
+    background: #fff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 80%;
+    max-width: 600px;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+form {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 10px 20px;
+    background: #007BFF;
+    border: none;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+#loading {
+    display: none;
+    margin-top: 20px;
+}
+
+#loading img {
+    width: 50px;
+}
+
+.result {
+    display: none;
+    margin-top: 20px;
+}
+
+.result pre {
+    background: #f0f0f0;
+    padding: 10px;
+    border-radius: 4px;
+    white-space: pre-wrap;  /* Allows text to wrap */
+    word-wrap: break-word;  /* Prevents overflow */
+}
+
+.fade-in {
+    animation: fadeIn 1s;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
